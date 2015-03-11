@@ -1,0 +1,52 @@
+﻿<WorkflowService mc:Ignorable="sap sap2010 sads" p:TextExpression.Namespaces="{x:Reference __ReferenceID0}" p:TextExpression.References="{x:Reference __ReferenceID1}" ConfigurationName="TestService" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="WorkflowService_1" Name="TestService"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/servicemodel"
+ xmlns:ha="clr-namespace:Hosting.Activities;assembly=Hosting"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <p:Sequence DisplayName="Sequential Service" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <p:TextExpression.Namespaces>
+      <sco:Collection x:TypeArguments="x:String" x:Name="__ReferenceID0">
+        <x:String>System</x:String>
+        <x:String>System.Collections.Generic</x:String>
+        <x:String>System.Data</x:String>
+        <x:String>System.Linq</x:String>
+        <x:String>System.Text</x:String>
+      </sco:Collection>
+    </p:TextExpression.Namespaces>
+    <p:TextExpression.References>
+      <sco:Collection x:TypeArguments="p:AssemblyReference" x:Name="__ReferenceID1">
+        <p:AssemblyReference>mscorlib</p:AssemblyReference>
+        <p:AssemblyReference>System</p:AssemblyReference>
+        <p:AssemblyReference>System.Core</p:AssemblyReference>
+        <p:AssemblyReference>System.Data</p:AssemblyReference>
+        <p:AssemblyReference>System.ServiceModel</p:AssemblyReference>
+        <p:AssemblyReference>System.Xml</p:AssemblyReference>
+      </sco:Collection>
+    </p:TextExpression.References>
+    <p:Sequence.Variables>
+      <p:Variable x:TypeArguments="CorrelationHandle" Name="handle" />
+      <p:Variable x:TypeArguments="x:Int32" Name="data" />
+    </p:Sequence.Variables>
+    <ha:Initiate ServiceContractName="{}{http://wftransactions.localtest.me}ITestService" sap2010:WorkflowViewState.IdRef="Initiate_1" />
+    <sads:DebugSymbol.Symbol>d0NEOlxDT0RFWFxTYW1wbGVzXFdGVHJhbnNhY3Rpb25zXEhvc3RpbmdcV29ya2Zsb3dzXFRlc3RTZXJ2aWNlLnhhbWx4AgwDJhABASQFJIoBAQI=</sads:DebugSymbol.Symbol>
+  </p:Sequence>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="Initiate_1" sap:VirtualizedContainerService.HintSize="200,22" />
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="222,146">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="WorkflowService_1" sap:VirtualizedContainerService.HintSize="252,216" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+</WorkflowService>
