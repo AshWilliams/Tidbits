@@ -24,4 +24,4 @@ After ensuring the following prerequisites its a matter of running the client ap
 
 ## I would like to know more?
 
-See []().
+See [Workflow services and distributed transactions](https://exceptionalcode.wordpress.com/2015/03/11/workflow-services-and-distributed-transactions-argh/).
